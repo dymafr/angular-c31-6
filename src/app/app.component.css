@@ -17,23 +17,32 @@ li:active {
 }
 
 .odd {
-  background-color: #ECF0F1;
+  background-color: #ecf0f1;
 }
 
 .over {
-  background-color: #BDC3C7;
+  background-color: #bdc3c7;
   border: #ff525b dashed 2px;
 }
 
 .app-toolbar {
-    position: sticky;
-    position: -webkit-sticky;
-}
-
-::ng-deep .mat-card-header {
-  padding: 15px;
+  position: sticky;
+  position: -webkit-sticky;
 }
 
 mat-card > .over {
-  background-color: #FFCCBC;
+  background-color: #ffccbc;
+}
+
+.input-container {
+  background-color: white;
+  border-radius: 4px;
+}
+
+::ng-deep
+  .mat-mdc-text-field-wrapper.mdc-text-field--outlined
+  .mat-mdc-form-field-infix {
+  padding-top: 5px;
+  min-height: auto;
+  padding-bottom: 5px;
 }

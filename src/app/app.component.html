@@ -6,7 +6,11 @@
   fxLayoutGap="15px"
 >
   <span fxFlex="auto">To-do List</span>
-  <mat-form-field>
+  <mat-form-field
+    appearance="outline"
+    class="input-container"
+    fxLayoutAlign="center"
+  >
     <input
       (keydown.enter)="addList()"
       [(ngModel)]="listLabel"
