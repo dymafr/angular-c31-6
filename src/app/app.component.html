@@ -49,7 +49,11 @@
       fxLayoutAlign="start center"
       fxLayoutGap="15px"
     >
-      <mat-form-field>
+      <mat-form-field
+        appearance="outline"
+        class="input-container"
+        fxLayoutAlign="center"
+      >
         <input
           (keydown.enter)="addItem(list)"
           [(ngModel)]="itemContent"
